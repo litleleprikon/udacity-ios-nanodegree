@@ -1,0 +1,3 @@
+[submodule "PitchPerfect"]
+	path = PitchPerfect
+	url = git@github.com:litleleprikon/PitchPerfect.git
