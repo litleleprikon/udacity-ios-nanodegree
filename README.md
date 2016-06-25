@@ -26,3 +26,7 @@ Application that allows to change colors depending on sliders values.
 ##### [ImagePickerExample](https://github.com/litleleprikon/udacity-ios-nanodegree/tree/master/ImagePickerExample)
 
 Application that creates ImagePickerView on button click.
+
+##### [ios-nanodegree-uikit-2.0](https://github.com/litleleprikon/ios-nanodegree-uikit-2.0)
+
+Forket git repo. This repo aggregated some applications from UIKit part of nanodegree

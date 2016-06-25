@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EXz-eX-Usf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Rock Paper Scissors-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="E0M-a5-PiA">
+                                <rect key="frame" x="263" y="202" width="75" height="195"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xS8-Z7-v0F">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="65"/>
+                                        <state key="normal" image="rock"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GS3-mE-4xG">
+                                        <rect key="frame" x="0.0" y="65" width="75" height="65"/>
+                                        <state key="normal" image="paper"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXz-mn-az0">
+                                        <rect key="frame" x="0.0" y="130" width="75" height="65"/>
+                                        <state key="normal" image="scissors"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E0M-a5-PiA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="faq-Kq-WqK"/>
+                            <constraint firstItem="E0M-a5-PiA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uts-yo-8fe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rock Paper Scissors" id="NbP-3J-hZg"/>
+                    <connections>
+                        <segue destination="z9N-Kg-UlW" kind="show" identifier="ShowResults" id="Xx5-8E-JnJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="305"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="NOl-Ad-2WW">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gHj-Tk-jEO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="z9N-Kg-UlW" customClass="ResultViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vyv-IX-AzM"/>
+                        <viewControllerLayoutGuide type="bottom" id="PjM-A4-jgf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DXq-9t-D8D">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Match results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95s-po-EGC">
+                                <rect key="frame" x="248" y="371" width="104" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eKF-gd-57H">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="sNQ-jc-BCW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="95s-po-EGC" firstAttribute="top" secondItem="eKF-gd-57H" secondAttribute="bottom" constant="7.5" id="1V0-oc-T25"/>
+                            <constraint firstItem="PjM-A4-jgf" firstAttribute="top" secondItem="95s-po-EGC" secondAttribute="bottom" constant="208" id="JC5-4g-oTb"/>
+                            <constraint firstItem="95s-po-EGC" firstAttribute="top" secondItem="eKF-gd-57H" secondAttribute="top" id="aHf-7R-hYi"/>
+                            <constraint firstItem="eKF-gd-57H" firstAttribute="centerX" secondItem="DXq-9t-D8D" secondAttribute="centerX" id="cso-4q-pVh"/>
+                            <constraint firstItem="eKF-gd-57H" firstAttribute="centerY" secondItem="DXq-9t-D8D" secondAttribute="centerY" id="dKg-9d-eJP"/>
+                            <constraint firstItem="95s-po-EGC" firstAttribute="centerX" secondItem="eKF-gd-57H" secondAttribute="centerX" id="u0P-S5-SgH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="aHf-7R-hYi"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Results" id="Ciq-mi-39E">
+                        <barButtonItem key="backBarButtonItem" title="Play again" id="RTL-3G-oW1"/>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1817" y="305"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bRE-FR-BKZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EXz-eX-Usf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eR7-vB-yDW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yq3-Ra-EeE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YxY-wg-GuD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="305"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paper" width="75" height="65"/>
+        <image name="rock" width="75" height="65"/>
+        <image name="scissors" width="75" height="65"/>
+    </resources>
+</document>

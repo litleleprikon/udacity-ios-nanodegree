@@ -1,3 +1,6 @@
 [submodule "PitchPerfect"]
 	path = PitchPerfect
 	url = git@github.com:litleleprikon/PitchPerfect.git
+[submodule "ios-nanodegree-uikit-2.0"]
+	path = ios-nanodegree-uikit-2.0
+	url = git@github.com:litleleprikon/ios-nanodegree-uikit-2.0.git
