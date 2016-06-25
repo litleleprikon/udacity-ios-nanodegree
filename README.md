@@ -1,5 +1,5 @@
 # Udacity iOS nanodegree
-Repository for applications build during Udacity iOS developer nanodegree program.
+Repository for applications built during Udacity iOS developer nanodegree program.
 
 ### Geo Quiz
 
@@ -29,4 +29,4 @@ Application that creates ImagePickerView on button click.
 
 ##### [ios-nanodegree-uikit-2.0](https://github.com/litleleprikon/ios-nanodegree-uikit-2.0)
 
-Forket git repo. This repo aggregated some applications from UIKit part of nanodegree
+Forked git repo. This repo aggregated some applications from UIKit part of nanodegree
