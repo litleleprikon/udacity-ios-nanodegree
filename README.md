@@ -1,5 +1,5 @@
 # Udacity iOS nanodegree
-Repository for applications built during Udacity iOS developer nanodegree program.
+Repository for applications had been built during Udacity iOS developer nanodegree program.
 
 ### Geo Quiz
 
